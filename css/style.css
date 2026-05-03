@@ -249,13 +249,67 @@
     letter-spacing: 2px; text-decoration: none;
     transition: all .3s; cursor: pointer; background: transparent;
   }
+  .about-quote {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 15px; font-style: normal;
+    color: var(--rose); letter-spacing: 2px;
+    margin-bottom: 20px !important;
+  }
+
   .btn-outline:hover { background: var(--rose); color: white; }
 
+  /* ── CERTIFICATIONS ── */
+  .about-certs {
+    max-width: 1100px; width: 100%; margin-top: 24px;
+    padding-top: 24px; border-top: 1px solid var(--sand);
+    margin-bottom: 40px;
+  }
+  .certs-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 16px; font-weight: 400;
+    color: var(--text-light); letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  .certs-list { display: flex; flex-direction: column; }
+  .cert-item {
+    display: flex; align-items: center; gap: 16px;
+    padding: 14px 20px;
+    background: var(--cream);
+    border: 1px solid var(--sand);
+    border-bottom: none;
+    transition: background .3s;
+  }
+  .cert-item:first-child { border-radius: 4px 4px 0 0; }
+  .cert-item:last-child { border-bottom: 1px solid var(--sand); border-radius: 0 0 4px 4px; }
+  .cert-item:hover { background: var(--warm-white); }
+  .cert-icon { font-size: 16px; opacity: 0.7; }
+  .cert-name {
+    flex: 1; font-size: 15px; color: var(--text-dark); letter-spacing: 1.5px;
+  }
+  .cert-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; color: var(--rose); letter-spacing: 2px;
+  }
+
   .about-icons {
-    display: flex; gap: 40px; margin-top: 50px;
-    padding-top: 40px; border-top: 1px solid var(--sand);
+    display: flex; justify-content: center; margin-top: 20px;
+    padding-top: 20px; border-top: 1px solid var(--sand);
     max-width: 1100px; width: 100%;
   }
+  .icons-wrap { position: relative; width: 560px; }
+  .icons-img { width: 560px; height: auto; display: block; }
+  .icons-labels {
+    position: relative; width: 560px; height: 28px; margin-top: 6px;
+  }
+  .icons-labels span {
+    position: absolute; transform: translateX(-50%);
+    font-size: 13px; color: var(--text-mid); letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .icons-labels span:nth-child(1) { left: 16.0%; }
+  .icons-labels span:nth-child(2) { left: 38.5%; }
+  .icons-labels span:nth-child(3) { left: 61.8%; }
+  .icons-labels span:nth-child(4) { left: 84.8%; }
   .icon-item {
     flex: 1; text-align: center;
   }
